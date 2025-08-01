@@ -1,8 +1,8 @@
 def safe_divide(numerator, denominator):
     try:
-        
-        if denominator != 0:
-            return f"The result of the division is {numerator/denominator}"
+        num = float(numerator)
+        den = float(denominator)
+        return num/den
     except ZeroDivisionError:
         print("Error: Cannot divide by zero.")
     except ValueError:
